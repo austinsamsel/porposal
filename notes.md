@@ -1,8 +1,8 @@
-proposal app
+#proposal app
 
+status: https://book.discovermeteor.com/chapter/routing
 
 send link to their proposal
-
 
 letsdothis.com/a24l24mlzi4lka92
 
