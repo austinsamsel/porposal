@@ -1,0 +1,29 @@
+<template name="layout">
+  <div class="container">
+    <header class="navbar navbar-default" role="navigation"> 
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{pathFor 'postsList'}}">Porposal</a>
+      </div>
+    </header>
+    <div id="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>
+  
+
+<template name ="postsList">
+  <div class="posts">
+    {{#each posts}}
+      {{> postItem}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="postItem">
+  <div class="post">
+    <div class="post-content">
+      <h3><a href="{{url}}">{{title}}</a></h3>
+    </div>
+  </div>
+</template>
