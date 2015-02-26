@@ -1,6 +1,6 @@
 #proposal app
 
-status: https://book.discovermeteor.com/chapter/adding-users
+status: https://book.discovermeteor.com/chapter/creating-posts
 
 send link to their proposal
 
