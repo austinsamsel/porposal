@@ -3,6 +3,11 @@
     <h3><a href="{{url}}">{{title}}</a></h3>
     <div class="content">
       {{content}}
+      <ul class="comments">
+        {{#each comments}}
+          {{> commentItem}}
+        {{/each}}
+      </ul>
     </div>
   </div>
 </template>
