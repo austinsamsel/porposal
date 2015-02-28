@@ -16,7 +16,8 @@ if (Posts.find().count() === 0) {
     userId: paris._id,
     author: paris.profile.name,
     content: 'a contract here.',
-    submitted: new Date(now - 7 * 3600 * 1000)
+    submitted: new Date(now - 7 * 3600 * 1000),
+    commentsCount: 2
   });
 
   Comments.insert({
@@ -40,7 +41,8 @@ if (Posts.find().count() === 0) {
     userId: austo._id,
     author: austo.profile.name,
     content: 'anotehr contract',
-    submitted: new Date(now - 10 * 3600 * 1000)
+    submitted: new Date(now - 10 * 3600 * 1000),
+    commentsCount: 0
   });
 
   Posts.insert({
@@ -48,6 +50,7 @@ if (Posts.find().count() === 0) {
     userId: austo._id,
     author: austo.profile.name,
     content: 'sup. a proposal and a contract',
-    submitted: new Date(now - 12 * 3600 * 1000)
+    submitted: new Date(now - 12 * 3600 * 1000),
+    CommentsCount: 0
   });
 }
