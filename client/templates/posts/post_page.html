@@ -1,6 +1,6 @@
 <template name="postPage">
   <div class="post-page page">
-    <h3><a href="{{url}}">{{title}}</a></h3>
+    <h3>{{title}}</h3>
     <div class="content">
       {{content}}
       <ul class="comments">
@@ -8,6 +8,11 @@
           {{> commentItem}}
         {{/each}}
       </ul>
+      {{#if currentUser}}
+        {{> commentSubmit}}
+      {{else}}
+        <p>Please log in to cleave a comment.</p>
+      {{/if}}
     </div>
   </div>
 </template>

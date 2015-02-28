@@ -1,7 +1,7 @@
 <template name="postItem">
   <div class="post">
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a></h3>
+      <h3>{{title}}</h3>
       <p>
         made by {{author}},
         <a href="{{pathFor 'postPage'}}">{{commentsCount}} comments</a>
@@ -10,5 +10,4 @@
     </div>
     <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">View</a>
   </div>
-  <hr>
 </template>
