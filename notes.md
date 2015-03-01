@@ -48,8 +48,7 @@ if signed in, [edit][delete]
 [comments]
 
 #### after approve
-step 1: signature
-step 2: pay invoice
+click approve. popover, add your signature. [its official]
 ---
 
 ### Notifications.

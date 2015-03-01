@@ -16,11 +16,12 @@ Template.postSubmit.events({
 
     var post = {
       title: $(e.target).find('[name=title]').val(),
+      expiration: $(e.target).find('[name=expiration]').val(),
       content: $(e.target).find('[name=content]').val()
     };
 
     var errors = validatePost(post);
-    if (errors.title || errors.content)
+    if (errors.title || errors.content || errors.expiration)
       return Session.set('postSubmitErrors', errors);
 
     Meteor.call('postInsert', post, function(error, result) {
