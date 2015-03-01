@@ -53,4 +53,15 @@ if (Posts.find().count() === 0) {
     submitted: new Date(now - 12 * 3600 * 1000),
     CommentsCount: 0
   });
+
+  for (var i = 0; i < 10; i++) {
+    Posts.insert({
+      title: 'Test post #' + i,
+      author: paris.profile.name,
+      userId: paris._id,
+      content: 'sample proposal and contract' + i,
+      submitted: new Date(now - i * 3600 * 1000),
+      commentsCount: 0
+    });
+  }
 }
