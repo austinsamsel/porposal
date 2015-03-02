@@ -4,11 +4,10 @@ Template.postItem.helpers({
   },
   signatureStatus: function() {
     var pending = Signatures.find({postId: this._id}).count();
-
     if (pending === 0) {
       return "pending"
     } else {
-      "approved"
-    }
+      return "approved"
+    };
   }
 });

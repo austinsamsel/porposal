@@ -41,16 +41,16 @@ if (Posts.find().count() === 0) {
     postId: porposalId,
     userId: austo._id,
     author: austo.profile.name,
-    submitted: new Date(now - 5 * 3600 * 1000),
-    body: 'Signed ~ ceo'
+    submitted: new Date(now - 4 * 3600 * 1000),
+    signage: 'Signed ~ ceo'
   });
 
   Signatures.insert({
     postId: porposalId,
     userId: paris._id,
     author: paris.profile.name,
-    submitted: new Date(now - 3 * 3600 * 1000),
-    body: 'BOOM ~capitan'
+    submitted: new Date(now - 1 * 3600 * 1000),
+    signage: 'BOOM ~capitan'
   });
 
   Posts.insert({

@@ -1,9 +1,7 @@
 <template name="signatureItem">
-  <li>
     <h4>
       <span class="author">{{author}}</span>
-      <span class="date">on {{submittedText}}</span>
+      <span class="date">on {{formatDate submittedText}}</span>
     </h4>
-    <p>{{body}}</p>
-  </li>
+    <p>{{signage}}</p>
 </template>
