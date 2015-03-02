@@ -39,14 +39,6 @@ if (Posts.find().count() === 0) {
 
   Signatures.insert({
     postId: porposalId,
-    userId: austo._id,
-    author: austo.profile.name,
-    submitted: new Date(now - 4 * 3600 * 1000),
-    signage: 'Signed ~ ceo'
-  });
-
-  Signatures.insert({
-    postId: porposalId,
     userId: paris._id,
     author: paris.profile.name,
     submitted: new Date(now - 1 * 3600 * 1000),
