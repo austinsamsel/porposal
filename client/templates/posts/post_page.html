@@ -14,6 +14,11 @@
         {{#each signatures}}
           {{> signatureItem}}
         {{/each}}
+        {{#if currentUser}}
+          {{> signatureSubmit}}
+        {{else}}
+          <p>Please log in to leave a signature.</p>
+        {{/if}}
       </ul>
     </div>
     <ul class="comments">
