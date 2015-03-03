@@ -20,7 +20,3 @@ Meteor.publish('signatures', function(postId) {
   check(postId, String);
   return Signatures.find({postId: postId});
 });
-
-Meteor.publish('signatures', function() {
-  return Signatures.find();
-})
