@@ -1,9 +1,6 @@
 #proposal app
 
-status: https://book.discovermeteor.com/chapter/comments
-around commit 10-4, something went wrong in signatures. 
-"used before it was defined"
-maybe publications.js needs statements combined.
+status: https://book.discovermeteor.com/chapter/errors
 
 send link to their proposal
 

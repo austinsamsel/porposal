@@ -18,8 +18,7 @@ if (Posts.find().count() === 0) {
     author: paris.profile.name,
     content: 'a contract here.',
     submitted: new Date(now - 7 * 3600 * 1000),
-    commentsCount: 2,
-    signatureStatus: 'pending'
+    commentsCount: 2
   });
 
   Comments.insert({
@@ -53,8 +52,7 @@ if (Posts.find().count() === 0) {
     author: austo.profile.name,
     content: 'anotehr contract',
     submitted: new Date(now - 10 * 3600 * 1000),
-    commentsCount: 0,
-    signatureStatus: 'pending'
+    commentsCount: 0
   });
 
   Posts.insert({
@@ -64,8 +62,7 @@ if (Posts.find().count() === 0) {
     author: austo.profile.name,
     content: 'sup. a proposal and a contract',
     submitted: new Date(now - 12 * 3600 * 1000),
-    CommentsCount: 0,
-    signatureStatus: 'pending'
+    CommentsCount: 0
   });
 
   for (var i = 0; i < 10; i++) {
@@ -76,8 +73,7 @@ if (Posts.find().count() === 0) {
       userId: paris._id,
       content: 'sample proposal and contract' + i,
       submitted: new Date(now - i * 3600 * 1000),
-      commentsCount: 0,
-      signatureStatus: 'pending'
+      commentsCount: 0
     });
   }
 }
