@@ -16,9 +16,8 @@ Meteor.publish('comments', function(postId) {
   return Comments.find({postId: postId});
 });
 
-Meteor.publish('signatures', function(postId) {
-  check(postId, String);
-  return Signatures.find({postId: postId});
+Meteor.publish('notifications', function() {
+  return Notifications.find({userId: this.userId, read: false});
 });
 
 Meteor.publish('signatures', function() {
