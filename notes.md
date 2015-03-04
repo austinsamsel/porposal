@@ -1,6 +1,6 @@
 #proposal app
 
-status: https://book.discovermeteor.com/chapter/errors
+status: https://book.discovermeteor.com/chapter/comments
 
 send link to their proposal
 

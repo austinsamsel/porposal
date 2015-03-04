@@ -11,6 +11,11 @@ Meteor.publish('singlePost', function(id) {
   return Posts.find(id);
 });
 
+Meteor.publish('signatures', function(postId) {
+  check(postId, String);
+  return Signatures.find({postId: postId});
+});
+
 Meteor.publish('comments', function(postId) {
   check(postId, String);
   return Comments.find({postId: postId});
@@ -19,7 +24,3 @@ Meteor.publish('comments', function(postId) {
 Meteor.publish('notifications', function() {
   return Notifications.find({userId: this.userId, read: false});
 });
-
-Meteor.publish('signatures', function() {
-  return Signatures.find();
-})
