@@ -2,6 +2,10 @@
 
 status: https://book.discovermeteor.com/chapter/comments
 
+to do:
++ reverse notification order
++ main page is only *your* contracts.
+
 send link to their proposal
 
 letsdothis.com/a24l24mlzi4lka92
