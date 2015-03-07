@@ -3,7 +3,9 @@
 status: https://book.discovermeteor.com/chapter/comments
 
 to do:
-+ redirect to welcome page template if not logged in.
++ design welcome page.
++ redirect from postsList to welcome page if not logged in.
++ add "you don't have any proposals. add one."
 <!-- + individual post pages are either public or need a code. -->
 <!-- + main page is only *your* contracts (rm from console).
     * can "share" documents. but they aren't published globally. so u need the link to see anyone else's but yours. -->
