@@ -9,8 +9,8 @@ to do:
 <!-- + individual post pages are either public or need a code. -->
 <!-- + main page is only *your* contracts (rm from console).
     * can "share" documents. but they aren't published globally. so u need the link to see anyone else's but yours. -->
-+ figure out errors in cli.
-+ capture IP address for signatures.
+<!-- + figure out errors in cli. -->
+<!-- + capture IP address for signatures. -->
 
 to do UI:
 + markdown editor.
