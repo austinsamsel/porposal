@@ -20,8 +20,11 @@
 <template name="notificationItem">
   <li>
     <a href="{{notificationPostPath}}">
-      {{commenterName}}
-      {{signerName}}
+      {{#if commenterName}}
+        {{commenterName}} commented.
+      {{else}}
+        {{signerName}} signed.
+      {{/if}}
     </a>
   </li>
 </template>
