@@ -9,3 +9,6 @@ Template.registerHelper('formatDate', function(date) {
 Template.postSubmit.rendered = function() {
   this.$('.datepicker').datepicker();
 }
+Template.postEdit.rendered = function() {
+  this.$('.datepicker').datepicker();
+}

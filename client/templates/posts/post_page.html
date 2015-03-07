@@ -5,7 +5,7 @@
         <h3>{{title}}</h3>
         <h5>expires: {{formatDate expiration}}</h5>
         <div class="content">
-          {{content}}
+        {{#markdown}}{{content}}{{/markdown}}
         </div>
       </div>
       <br><br><br><br>
