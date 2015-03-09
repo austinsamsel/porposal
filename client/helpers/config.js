@@ -3,7 +3,10 @@ Accounts.ui.config({
 });
 
 Template.registerHelper('formatDate', function(date) {
-  return moment(date).format('MM-DD-YYYY');
+  return moment(date).format('dddd, MMMM Do, YYYY');
+});
+Template.registerHelper('formatDateTime', function(date) {
+  return moment(date).format('dddd, MMMM Do, YYYY, h:mm a');
 });
 
 Template.postSubmit.rendered = function() {

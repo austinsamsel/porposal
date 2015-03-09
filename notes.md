@@ -6,16 +6,23 @@ to do:
 + design welcome page.
 + redirect from postsList to welcome page if not logged in.
 + add "you don't have any proposals. add one."
++ draw signatures
++ export to PDF
++ add user logo.
++ client e-mail to send proposal to them.
++ disallow signatures after expiration date.
++ send reminders if have not signed.
++ templates users can save and reuse.
 <!-- + individual post pages are either public or need a code. -->
 <!-- + main page is only *your* contracts (rm from console).
     * can "share" documents. but they aren't published globally. so u need the link to see anyone else's but yours. -->
 <!-- + figure out errors in cli. -->
 <!-- + capture IP address for signatures. -->
-
 to do UI:
-+ markdown editor.
-+ html5 canvas for signature.
+<!-- + markdown editor. -->
 + improve look/feel.
+
+
 
 send link to their proposal
 

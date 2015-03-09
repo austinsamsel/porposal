@@ -2,26 +2,28 @@
   <div class="post-page page">
     <div class="post">
       <div class="post-content">
-        <h3>{{title}}</h3>
-        <h5>expires: {{formatDate expiration}}</h5>
+        <h1>{{title}}</h1>
+        <strong>expires:</strong> {{formatDate expiration}}
         <div class="content">
         {{#markdown}}{{content}}{{/markdown}}
         </div>
+
+        <h2>Signatures</h2>
+        <ul class="signatures">
+          {{#each signatures}}
+            {{> signatureItem}}
+          {{/each}}
+          {{#if currentUser}}
+            {{> signatureSubmit}}
+          {{else}}
+            <p>Please log in to leave a signature.</p>
+          {{/if}}
+        </ul>
       </div>
-      <br><br><br><br>
-      <h2>Look good?</h2>
-      <ul class="signatures">
-        {{#each signatures}}
-          {{> signatureItem}}
-        {{/each}}
-        {{#if currentUser}}
-          {{> signatureSubmit}}
-        {{else}}
-          <p>Please log in to leave a signature.</p>
-        {{/if}}
-      </ul>
     </div>
-    <ul class="comments">
+    <div class="comments-wrap">
+      <ul class="comments">
+      <h1>Comments</h1>
         {{#each comments}}
           {{> commentItem}}
         {{/each}}
@@ -31,5 +33,6 @@
       {{else}}
         <p>Please log in to cleave a comment.</p>
       {{/if}}
+    </div>
   </div>
 </template>
