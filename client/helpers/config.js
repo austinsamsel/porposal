@@ -15,3 +15,7 @@ Template.postSubmit.rendered = function() {
 Template.postEdit.rendered = function() {
   this.$('.datepicker').datepicker();
 }
+
+Handlebars.registerHelper("isNull", function(value) {
+  return value === null;
+});

@@ -5,6 +5,11 @@
         {{> postItem}}
       {{/each}}
     
+    {{#if isNull posts}}
+    {{else}}
+      <div class="post page jumbotron skinny"><p>You haven't made any proposals or contracts yet. <a href="{{pathFor 'postSubmit'}}">Add one now.</a></p></div>
+    {{/if}}
+    
 
     {{#if nextPath}}
       <a class="load-more" href="{{nextPath}}">Load more</a>

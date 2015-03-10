@@ -16,6 +16,11 @@ body {
   color:#666
 }
 
+.skinny > p{
+  max-width:480px;
+  margin:0 auto;
+}
+
 #main {
   position:relative
 }
@@ -108,6 +113,10 @@ form.main.form.page {
 
 ul.signatures {
   padding:0;
+}
+span.date {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .comments-wrap{
