@@ -1,4 +1,5 @@
 <template name="postEdit">
+  <div class="form-wrap">
   <form class="main form page">
     <div class="form-group {{errorClass 'title'}}">
       <label class="control-label" for="title">Title</label>
@@ -15,9 +16,9 @@
       </div>
     </div>
     <div class="form-group {{errorClass 'content'}}">
-      <label class="control-label" for="content">Content</label>
+      <label class="control-label" for="content">Content: Use <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a></label>
       <div class="controls">
-          <textarea name="content" id="content" type="text" value="{{content}}" placeholder="Your content" class="form-control"></textarea>
+          <textarea name="content"  id="content" type="text" value="{{content}}" placeholder="Your content" class="form-control"></textarea>
           <span class="help-block">{{errorMessage 'content'}}</span>
       </div>
     </div>
@@ -25,4 +26,5 @@
     <hr/>
     <a class="btn btn-danger delete" href="#">Delete post</a>
   </form>
+  </div>
 </template>

@@ -8,17 +8,22 @@
         {{#markdown}}{{content}}{{/markdown}}
         </div>
 
+        <hr>
+
+        <button type="button" class="btn btn-lg btn-success" data-toggle="collapse" data-target="#signature-zone">Accept </button>
+        <div class="collapse" id="signature-zone">
         <h2>Signatures</h2>
-        <ul class="signatures">
-          {{#each signatures}}
-            {{> signatureItem}}
-          {{/each}}
-          {{#if currentUser}}
-            {{> signatureSubmit}}
-          {{else}}
-            <p>Please log in to leave a signature.</p>
-          {{/if}}
-        </ul>
+          <ul class="signatures">
+            {{#each signatures}}
+              {{> signatureItem}}
+            {{/each}}
+            {{#if currentUser}}
+              {{> signatureSubmit}}
+            {{else}}
+              <p><strong>Please log in to leave a signature.</strong></p>
+            {{/if}}
+          </ul>
+        </div>
       </div>
     </div>
     <div class="comments-wrap">
@@ -31,7 +36,7 @@
       {{#if currentUser}}
         {{> commentSubmit}}
       {{else}}
-        <p>Please log in to cleave a comment.</p>
+        <p><strong>Please log in to leave a comment.</strong></p>
       {{/if}}
     </div>
   </div>
