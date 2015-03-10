@@ -1,7 +1,8 @@
 <template name="signatureItem">
-    <h4>
-      <span class="author">{{author}}</span>
-      <span class="date">on {{formatDate submittedText}} - {{authorIP}}</span>
-    </h4>
-    <p>{{signage}}</p>
+    <li>
+      <h4>
+        <span class="date"><strong>{{author}}</strong> on {{formatDate submittedText}} - ({{authorIP}})</span>
+      </h4>
+      <h4><span class="author">{{signage}}</span></h4>
+    </li>
 </template>

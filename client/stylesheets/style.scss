@@ -39,7 +39,7 @@ body {
   height:300px
 }
 
-.post {
+.post-page {
   padding-top:40px;
   padding-bottom:40px;
 /* For modern browsers */
@@ -111,9 +111,6 @@ form.main.form.page {
   line-height: 21px;
 }
 
-ul.signatures {
-  padding:0;
-}
 span.date {
   font-size: 12px;
   font-weight: 400;
@@ -128,48 +125,56 @@ span.date {
   margin: 0 auto;
 }
 
-ul.comments, .comment-form{
+ul.comments, .comment-form,
+ul.signatures, .signature-form{
   width:$content-width;
   margin:0 auto;
   padding-left:0;
 }
-.comment-form{
+.comment-form,
+.signature-form{
   margin-bottom:10px;
 }
 
-.post .discuss {
+.post .view {
   display:block;
   float:right;
-  margin-top:7px
+  margin:-50px 10px 0 0;
 }
 
-.comments {
+.comments, 
+.signatures {
   list-style-type:none;
   margin:0 auto;
   width:$content-width;
 }
 
-.comments li{
+.comments li, 
+.signatures li{
   padding:10px;
   margin-bottom:10px;
   border-bottom:1px solid #eee;
 }
 
-.comments li h4 {
+.comments li h4, 
+.signatures li h4{
   font-size:16px;
   margin:0 0 5px 0;
 }
 
-.comments li h4 .date {
+.comments li h4 .date,
+.signatures li h4 .date {
   font-size:12px;
   font-weight:400
 }
 
-.comments li h4 a {
+.comments li h4 a,
+.signatures li h4 a {
   font-size:12px
 }
 
-.comments li p:last-child {
+.comments li p:last-child,
+.signatures li p:last-child{
   margin-bottom:0
 }
 

@@ -1,29 +1,31 @@
 <template name="postPage">
-  <div class="post-page page">
-    <div class="post">
+  <div class="page">
+    <div class="post post-page">
       <div class="post-content">
         <h1>{{title}}</h1>
-        <strong>expires:</strong> {{formatDate expiration}}
+        <strong>Expires if not signed by:</strong> {{formatDate expiration}}
         <div class="content">
         {{#markdown}}{{content}}{{/markdown}}
         </div>
 
         <hr>
 
-        <button type="button" class="btn btn-lg btn-success" data-toggle="collapse" data-target="#signature-zone">Accept </button>
-        <div class="collapse" id="signature-zone">
-        <h2>Signatures</h2>
-          <ul class="signatures">
-            {{#each signatures}}
-              {{> signatureItem}}
-            {{/each}}
-            {{#if currentUser}}
-              {{> signatureSubmit}}
-            {{else}}
-              <p><strong>Please log in to leave a signature.</strong></p>
-            {{/if}}
-          </ul>
-        </div>
+       <!--  <button type="button" class="btn btn-lg btn-success" data-toggle="collapse" data-target="#signature-zone">I'm ready to sign</button>
+        <div class="collapse" id="signature-zone"> -->
+          
+            <h2>Signatures</h2>
+            <ul class="signatures">
+              {{#each signatures}}
+                {{> signatureItem}}
+              {{/each}}
+            </ul>
+
+          {{#if currentUser}}
+            {{> signatureSubmit}}
+          {{else}}
+            <p><strong>Please log in to leave a signature.</strong></p>
+          {{/if}}
+        <!-- </div> -->
       </div>
     </div>
     <div class="comments-wrap">

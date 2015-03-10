@@ -1,5 +1,5 @@
 Accounts.ui.config({
-  passwordSignupFields: 'USERNAME_ONLY'
+  //passwordSignupFields: 'USERNAME_ONLY'
 });
 
 Template.registerHelper('formatDate', function(date) {
@@ -11,11 +11,7 @@ Template.registerHelper('formatDateTime', function(date) {
 
 Template.postSubmit.rendered = function() {
   this.$('.datepicker').datepicker();
-}
+};
 Template.postEdit.rendered = function() {
   this.$('.datepicker').datepicker();
-}
-
-Handlebars.registerHelper("isNull", function(value) {
-  return value === null;
-});
+};
