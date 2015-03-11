@@ -6,6 +6,6 @@
     "npm":  "1.4.23"
   },
   "dependencies": {
-    "fibers": "1.0.0"
+    "fibers": "1.0.1"
   }
 }
