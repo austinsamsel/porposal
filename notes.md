@@ -3,14 +3,14 @@
 status: https://book.discovermeteor.com/chapter/comments
 
 to do:
-+ design welcome page.
-+ redirect from postsList to welcome page if not logged in.
-+ add "you don't have any proposals. add one."
++ design welcome page to make it awesome.
+<!-- + redirect from postsList to welcome page if not logged in. -->
+<!-- + add "you don't have any proposals. add one." -->
 + draw signatures
 + export to PDF
 + add user logo.
 + client e-mail to send proposal to them.
-+ disallow signatures after expiration date.
++ disallow signatures after expiration date + add disallow for console.
 + send reminders if have not signed.
 + templates users can save and reuse.
 <!-- + individual post pages are either public or need a code. -->
