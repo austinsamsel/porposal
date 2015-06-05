@@ -2,24 +2,34 @@
   <div class="page">
     <div class="post post-page">
       <div class="post-content">
-        <h1>{{title}}</h1>
+        <h2>{{title}}</h2>
         <strong>Expires if not signed by:</strong> {{formatDate expiration}}
-        <hr>
-        <div class="content">
-        {{#markdown}}{{content}}{{/markdown}}
-        </div>
-
-        <hr>
-
        <!--  <button type="button" class="btn btn-lg btn-success" data-toggle="collapse" data-target="#signature-zone">I'm ready to sign</button>
         <div class="collapse" id="signature-zone"> -->
         
-          <h2>Signatures</h2>
-          <ul class="signatures">
-            {{#each signatures}}
-              {{> signatureItem}}
-            {{/each}}
-          </ul>
+        <!-- </div> -->
+      </div>
+    </div>
+
+  <div class="page">
+    <div class="post post-page">
+      <div class="post-content">
+        <div class="content">
+          {{#markdown}}{{content}}{{/markdown}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="post post-page">
+      <div class="post-content">
+        <h2>Signatures</h2>
+        <ul class="signatures">
+          {{#each signatures}}
+            {{> signatureItem}}
+          {{/each}}
+        </ul>
 
         {{#if isFresh}}
           {{#if currentUser}}
@@ -28,14 +38,15 @@
             <p><strong>Please log in to sign the document.</strong></p>
           {{/if}}
         {{else}}
-          <p>Expired documents can no longer be signed.</p>
+          <p>Documents cannot be signed after the expiration date.</p>
         {{/if}}
-        <!-- </div> -->
       </div>
     </div>
+  </div>
+
     <div class="comments-wrap">
       <ul class="comments">
-      <h1>Comments</h1>
+      <h2>Comments</h2>
         {{#each comments}}
           {{> commentItem}}
         {{/each}}
@@ -43,7 +54,7 @@
       {{#if currentUser}}
         {{> commentSubmit}}
       {{else}}
-        <p><strong>Please log in to leave a comment.</strong></p>
+        <p><strong class="login-msg">Please log in to leave a comment.</strong></p>
       {{/if}}
     </div>
   </div>
