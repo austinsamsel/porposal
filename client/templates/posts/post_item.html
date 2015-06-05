@@ -1,15 +1,14 @@
 <template name="postItem">
   <div class="post">
     <div class="post-content">
-      <h3>{{title}}</h3>
+      <h3>{{title}} {{#if ownPost}} <a href="{{pathFor 'postEdit'}}" class="post-edit-link">Edit</a>{{/if}}</h3>
       <hr>
       <strong>status:</strong> {{signatureStatus}}<br>
       <strong>expires:</strong> {{formatDate expiration}}
       <p>
-        <a href="{{pathFor 'postPage'}}">{{commentsCount}} comments</a>
-        {{#if ownPost}} &#8226; <a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}} 
+        <a href="{{pathFor 'postPage'}}">{{commentsCount}} comments</a> 
       </p>
     </div>
-    <a href="{{pathFor 'postPage'}}" class="view btn btn-default">View</a>
+    <a href="{{pathFor 'postPage'}}"><div class="ui purple button">View</div></a>
   </div>
 </template>

@@ -27,7 +27,7 @@ a:hover, a:focus {
 .grid-block, .form-wrap, .post {
   background:#fff;
   border-radius:3px;
-  padding:10px 30px;
+  padding:10px 30px 16px;
   margin-bottom:10px;
   -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.15);
   -moz-box-shadow:0 1px 1px rgba(0,0,0,0.15);
@@ -71,6 +71,10 @@ a:hover, a:focus {
 }
 .navbar-inverse .navbar-nav > li > a {
   color: darkviolet;
+}
+
+.ui.buttons .button, .ui.buttons .or, .ui.button {
+  font-size: 1em;
 }
 
 .btn-primary {
@@ -147,10 +151,8 @@ form.main.form.page {
   padding:6px 12px;
 }
 
-.post .upvote {
-  display:block;
-  margin:7px 12px 0 0;
-  float:left
+.post-edit-link{
+  font-size:12px;
 }
 
 .post .post-content {
