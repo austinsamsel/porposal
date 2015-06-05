@@ -6,7 +6,7 @@
       <strong>status:</strong> {{signatureStatus}}<br>
       <strong>expires:</strong> {{formatDate expiration}}
       <p>
-        <a href="{{pathFor 'postPage'}}">{{commentsCount}} comments</a> 
+      {{pluralize commentsCount "Comment"}}
       </p>
     </div>
     <a href="{{pathFor 'postPage'}}"><div class="ui purple button">View</div></a>
