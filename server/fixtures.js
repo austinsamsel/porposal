@@ -19,7 +19,7 @@ if (Posts.find().count() === 0) {
     content: 'a contract here.',
     submitted: new Date(now - 7 * 3600 * 1000),
     commentsCount: 2,
-    signatureStatus: "approved"
+    signatureStatus: 1
   });
 
   Comments.insert({
@@ -62,7 +62,7 @@ if (Posts.find().count() === 0) {
     content: 'anotehr contract',
     submitted: new Date(now - 10 * 3600 * 1000),
     commentsCount: 0,
-    signatureStatus: "pending"
+    signatureStatus: 0
   });
 
   Posts.insert({
@@ -73,7 +73,7 @@ if (Posts.find().count() === 0) {
     content: 'sup. a proposal and a contract',
     submitted: new Date(now - 12 * 3600 * 1000),
     CommentsCount: 0,
-    signatureStatus: "pending"
+    signatureStatus: 0
   });
 
   for (var i = 0; i < 10; i++) {
@@ -85,7 +85,7 @@ if (Posts.find().count() === 0) {
       content: 'sample proposal and contract' + i,
       submitted: new Date(now - i * 3600 * 1000),
       commentsCount: 0,
-      signatureStatus: "pending"
+      signatureStatus: 0
     });
   }
 }

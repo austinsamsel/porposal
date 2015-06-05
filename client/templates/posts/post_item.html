@@ -3,8 +3,8 @@
     <div class="post-content">
       <h3>{{title}} {{#if ownPost}} <a href="{{pathFor 'postEdit'}}" class="post-edit-link">Edit</a>{{/if}}</h3>
       <hr>
-      <strong>status:</strong> {{signatureStatus}}<br>
-      <strong>expires:</strong> {{formatDate expiration}}
+      <strong>Expires:</strong> {{formatDate expiration}}<br>
+      {{pluralize signatureStatus "Signature"}}<br>
       <p>
       {{pluralize commentsCount "Comment"}}
       </p>
